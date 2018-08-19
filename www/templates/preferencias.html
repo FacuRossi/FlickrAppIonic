@@ -1,0 +1,31 @@
+<ion-view view-title="{{'titulo_preferencias' | translate}}">
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-divider"> 
+				{{"pref_ordenar_directorios" | translate}}
+			</ion-item>
+			<ion-toggle toggle-class="toggle-balanced" ng-model="preferencias.dirName" ng-checked="preferencias.dirName" ng-change="cambiarFecha()">
+				{{"pref_ordenar_por_nombre" | translate}}
+			</ion-toggle>			
+			<ion-toggle toggle-class="toggle-balanced" ng-model="preferencias.dirDate" ng-checked="preferencias.dirDate" ng-change="cambiarNombre()">
+				{{"pref_ordenar_directorios_fecha" | translate}}
+			</ion-toggle>
+
+			<ion-item class="item-divider"> 
+				{{"pref_ordenar_fotos" | translate}}
+			</ion-item>
+			<ion-toggle toggle-class="toggle-balanced" ng-model="preferencias.photoName" ng-checked="preferencias.photoName">
+				{{"pref_ordenar_por_nombre" | translate}}
+			</ion-toggle>
+			<ion-item class="item-divider"> 
+				{{"pref_lenguaje" | translate}}
+			</ion-item>
+			<ion-toggle toggle-class="toggle-balanced" ng-model="preferencias.es" ng-checked="preferencias.es" ng-change="cambiarIdiomaEs()">
+				{{"pref_lenguaje_es" | translate}}
+			</ion-toggle>
+			<ion-toggle toggle-class="toggle-balanced" ng-model="preferencias.en" ng-checked="preferencias.en" ng-change="cambiarIdiomaEn()">
+				{{"pref_lenguaje_en" | translate}}
+			</ion-toggle>
+		</ion-list>
+	</ion-content>
+</ion-view>

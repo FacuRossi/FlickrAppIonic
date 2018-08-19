@@ -1,0 +1,34 @@
+<ion-view view-title="{{'titulo_directorios' | translate}}">
+	<ion-content>
+		<ion-refresher pulling-text="..." on-refresh="cargarDirectorios()"></ion-refresher>
+		<ion-item class="item item-input" >	
+			<input ng-model="userNameSearch" type="text" placeholder="{{'placeholder_busqueda' | translate}}">
+			<button ng-disabled="{{!online}}" ng-click="search(userNameSearch)" class="button button-light">
+				<i class="icon ion-search"></i>
+			</button>	
+		</ion-item>
+		<ion-list>
+			<div ng-if="preferencias.dirName">
+				<ion-item class="item item-icon-left" menu-close href="#/app/Directorios/{{dir.id}}/{{dir.title._content}}" ng-repeat="dir in directorios | orderBy:'title._content'">	
+					<i class="icon ion-android-folder-open"></i>
+					<h2>{{dir.title._content}}</h2>
+					<h5 id="directoriosCantFotos">{{dir.photos + " "}}{{'fotos' | translate}}</h5>			
+				</ion-item>
+			</div>
+			<div ng-if="preferencias.dirDate">
+				<ion-item class="item item-icon-left" menu-close href="#/app/Directorios/{{dir.id}}/{{dir.title._content}}" ng-repeat="dir in directorios | orderBy:'date_create'">	
+					<i class="icon ion-android-folder-open"></i>
+					<h2>{{dir.title._content}}</h2>
+					<h5 id="directoriosCantFotos">{{dir.photos + " "}}{{'fotos' | translate}}</h5>
+				</ion-item>
+			</div>
+			<div ng-if="!preferencias.dirDate && !preferencias.dirName">
+				<ion-item class="item item-icon-left" menu-close href="#/app/Directorios/{{dir.id}}/{{dir.title._content}}" ng-repeat="dir in directorios">	
+					<i class="icon ion-android-folder-open"></i>
+					<h2>{{dir.title._content}}</h2>
+					<h5 id="directoriosCantFotos">{{dir.photos + " "}}{{'fotos' | translate}}</h5>
+				</ion-item>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

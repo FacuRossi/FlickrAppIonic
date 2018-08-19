@@ -1,0 +1,25 @@
+#aboutP {
+	margin:10px 10px 10px 10px;
+	text-align: justify;
+	font-style: italic;
+}
+
+#tituloBienvenido {
+	text-align: center;
+	font-style: italic;
+}
+
+#directoriosCantFotos {
+	text-align: end;
+}
+
+#cover {	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#backImage {
+	background: 
+	/*url("../img/logo.png") bottom center no-repeat,*/
+	url("../img/textura.png") repeat; 
+}

@@ -1,0 +1,26 @@
+<ion-view view-title="{{titulo}}">
+	<ion-content>
+		<div class="list card">
+			<div class="item item-image">
+			<img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_n.jpg"/>
+			</div>
+			<div class="row">
+				<div class="col col-33">
+					<a class="item item-icon-left dark" href="#/app/comentarios/{{photo.id}}">
+						<i class="icon ion-chatbubbles"></i>
+					</a>
+				</div>
+				<div class="col col-33">
+					<a class="item item-icon-left dark" ng-href="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg" >
+						<i class="icon ion-arrow-expand"></i>
+					</a>
+				</div>
+				<div class="col col-33">
+					<a class="item item-icon-left dark" href="#/app/compartirFoto/{{photo.farm}}/{{photo.server}}/{{photo.id}}/{{photo.secret}}">
+						<i class="icon ion-share"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

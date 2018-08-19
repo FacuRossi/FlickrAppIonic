@@ -1,0 +1,19 @@
+<ion-view view-title="{{titulo}}">
+	<ion-content>
+	<ion-refresher pulling-text="..." on-refresh="cargarPhotos()"></ion-refresher>
+		<ion-list>
+			<div ng-if="preferencias.photoName">
+				<ion-item ng-repeat="photo in photos | orderBy:'title'"  class="item-thumbnail-left" href="#/app/photo/{{photo.id}}/{{photo.title}}">
+					<img ng-src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_t.jpg">
+					<h2>{{ photo.title }}</h2>
+				</ion-item>
+			</div>
+			<div ng-if="!preferencias.photoName">
+				<ion-item ng-repeat="photo in photos"  class="item-thumbnail-left" href="#/app/photo/{{photo.id}}/{{photo.title}}">
+					<img ng-src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_t.jpg">
+					<h2>{{ photo.title }}</h2>
+				</ion-item>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

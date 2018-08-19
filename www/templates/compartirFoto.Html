@@ -1,0 +1,10 @@
+<ion-view view-title="{{'titulo_compartir' | translate}}">
+	<ion-content>
+		<ion-item class="item item-input" >	
+			<input ng-model="email" type="text" placeholder="Email" required="true">
+			<button ng-click="enviarEmail(email)" class="button button-light">
+				<i class="ion-paper-airplane"></i>
+			</button>	
+		</ion-item>
+	</ion-content>
+</ion-view>
