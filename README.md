@@ -11,6 +11,16 @@ $ cordova prepare
 $ mv gulpfile.js gulpfile.js.unused
 ```
 
+## Demo
+
+![Alt text](readmeImg/FlickMain.jpeg?raw=true "Main") 
+
+![Alt text](readmeImg/FlickDir.jpeg?raw=true "Repo's") 
+
+![Alt text](readmeImg/FlickList.jpeg?raw=true "List") 
+
+![Alt text](readmeImg/FlickImage.jpeg?raw=true "Image") 
+
 ## Developers
 
 Rossi Facundo
