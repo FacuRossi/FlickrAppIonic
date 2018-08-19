@@ -13,13 +13,13 @@ $ mv gulpfile.js gulpfile.js.unused
 
 ## Demo
 
-![Alt text](readmeImg/FlickMain.jpeg?raw=true "Main") 
+<img src="readmeImg/FlickrMain.jpeg" width="200" height="200">
 
-![Alt text](readmeImg/FlickDir.jpeg?raw=true "Repo's") 
+<img src="readmeImg/FlickrDir.jpeg" width="200" height="200">
 
-![Alt text](readmeImg/FlickList.jpeg?raw=true "List") 
+<img src="readmeImg/FlickrList.jpeg" width="200" height="200">
 
-![Alt text](readmeImg/FlickImage.jpeg?raw=true "Image") 
+<img src="readmeImg/FlickImage.jpeg" width="200" height="200">
 
 ## Developers
 
